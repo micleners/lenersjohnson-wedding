@@ -1,0 +1,64 @@
+<div [ngClass]="{'container': !isMobile}">
+  <mat-grid-list
+    [cols]="breakpoint"
+    rowHeight="400px"
+    (window:resize)="onResize($event)"
+  >
+    <mat-grid-tile>
+      <mat-card class="hotel-card">
+        <a
+          class="mat-card-title"
+          href="https://hotelrenovo.com/"
+          target="_blank"
+        >
+          <mat-card class="hotel-title">Hotel Renovo</mat-card>
+        </a>
+        <p class="hotel-description">(Near Living History Farms)</p>
+        <div [ngClass]="{ 'hotel-container': isMobile }">
+          <mat-grid-list cols="5" rowHeight="80px" class="a4">
+            <a
+              href="https://www.google.com/maps/place/11167+Hickman+Rd,+Urbandale,+IA+50322/data=!4m2!3m1!1s0x87ec20d26392e3ff:0x34e4201e3af1191e?sa=X&amp;ved=2ahUKEwiNqLiU8ufaAhVM4IMKHXtxCwQQ8gEwAHoECAAQKQ"
+            >
+              <mat-grid-tile colspan="1">
+                <i class="material-icons hotel-icon">
+                  location_on
+                </i>
+              </mat-grid-tile>
+            </a>
+            <mat-grid-tile colspan="4">
+              <a
+                href="https://www.google.com/maps/place/11167+Hickman+Rd,+Urbandale,+IA+50322/data=!4m2!3m1!1s0x87ec20d26392e3ff:0x34e4201e3af1191e?sa=X&amp;ved=2ahUKEwiNqLiU8ufaAhVM4IMKHXtxCwQQ8gEwAHoECAAQKQ"
+                class="hotel-address"
+              >
+                11167 Hickman Rd<br />
+                Urbandale, IA 50322
+              </a>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+        <div [ngClass]="{ 'hotel-container': isMobile }">
+          <mat-grid-list cols="5" rowHeight="80px" class="a4">
+            <mat-grid-tile colspan="1">
+              <i class="material-icons hotel-icon">
+                smartphone
+              </i>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="4">
+              <p class="hotel-address" style="padding-top: 35px">
+                <span>
+                  515-276-1126
+                </span>
+              </p>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>Apples</mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>Apples</mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
