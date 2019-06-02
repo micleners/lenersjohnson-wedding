@@ -1,0 +1,17 @@
+<div [ngClass]="{ container: !isMobile }">
+  <h1 class="section-header">Registries</h1>
+  <mat-grid-list
+    [cols]="breakpoint"
+    rowHeight="350px"
+    (window:resize)="onResize()"
+    style="margin-top: 20px;"
+  >
+    <mat-grid-tile *ngFor="let registry of registries">
+      <mat-card>
+        <a href="{{ registry.url }}">
+          <img src="{{ registry.imageUrl }}" height="256px" />
+        </a>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

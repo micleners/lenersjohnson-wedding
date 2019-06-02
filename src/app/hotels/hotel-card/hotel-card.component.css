@@ -1,0 +1,55 @@
+.container {
+  margin: 0 10% 0 10%;
+}
+
+.hotel-card {
+  width: 85%;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(209,197,186,0.16);
+  padding: 20px 20px 5px 20px;
+  border-radius: 20px;
+}
+
+.hotel-title {
+  padding: 0.5em 1.2em;
+  border: 2px solid;
+  font-weight: 500;
+  border-radius: 3px;
+  font-size: 20px;
+  font-family: "Open Sans",Arial,sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  border-color: #2b5649;
+  background-color: #2b5649;
+}
+
+.hotel-description {
+  color: #666;
+  font-size: 14px;
+}
+
+.hotel-icon {
+  font-size: 30px;
+  color: #d1af83;
+}
+
+.hotel-container {
+  margin-left: 20%;
+}
+
+.hotel-address-height {
+  height: 60px;
+}
+
+.hotel-address {
+  text-align: left;
+  float: left;
+  width: 100%;
+  height: 70px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 1.9em;
+  color: #666666;
+}

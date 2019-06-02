@@ -9,6 +9,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { HotelsComponent } from './hotels/hotels.component';
+import { HotelCardComponent } from './hotels/hotel-card/hotel-card.component';
+import { RegistriesComponent } from './registries/registries.component';
 // import { PortfolioComponent } from './portfolio/portfolio.component';
 // import { AboutComponent } from './about/about.component';
 // import { HeadingComponent } from './heading/heading.component';
@@ -23,6 +25,8 @@ import { HotelsComponent } from './hotels/hotels.component';
   declarations: [
     AppComponent,
     HotelsComponent,
+    HotelCardComponent,
+    RegistriesComponent,
     // PortfolioComponent,
     // AboutComponent,
     // HeadingComponent,

@@ -1,0 +1,53 @@
+svg {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 62px;
+}
+
+.divider1 {
+  background: white;
+  height: 62px;
+}
+
+.divider2 {
+  background: #F7F6F4;
+  height: 62px;
+}
+
+.jagged-border2 {
+  background-image:
+  /* Top jagged */
+  linear-gradient(
+      135deg,
+      rgba(200,200,200,1) 50%, rgba(200,200,200,1) 50%
+  ),
+  linear-gradient(
+      -135deg,
+      rgba(100,100,100,1) 50%, rgba(100,100,100,1) 50%
+  ),
+  /* Bottom jagged */
+  linear-gradient(
+      45deg,
+      rgba(100,100,100,1) 50%, rgba(100,100,100,1) 50%
+  ),
+  linear-gradient(
+      -45deg,
+      rgba(200,200,200,1) 50%, rgba(200,200,200,1) 50%
+  );;
+  background-size: 20px 20px;
+  background-size: 100% 62px;
+  top: 0;
+  height: 100px;
+  z-index: 1;
+}
+
+#footer {
+  background-color: #2b5649;
+  padding: 10px 10px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Open Sans",Arial,sans-serif;
+  font-size: 12px;
+}

@@ -1,0 +1,14 @@
+.container {
+  margin: 0 10% 0 10%;
+}
+
+
+.registry-header {
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 60px;
+  color: #444235 !important;
+  line-height: 1.3em;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 0;
+}
