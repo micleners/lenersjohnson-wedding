@@ -1,0 +1,69 @@
+<div class="date">08-10-19</div>
+<div class="divider1">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="none"
+  >
+    <polygon
+      class="svg--sm"
+      fill="#F7F6F4"
+      points="0,50 25,0 75,100 100,50 100,100 0,100"
+    />
+  </svg>
+</div>
+
+<div class="venue">
+  <h2 class="venue-header">Walnut Woods State Park Lodge</h2>
+    <div class="container">
+  <mat-grid-list
+    [cols]="breakpoint"
+    rowHeight="400px"
+    (window:resize)="onResize()"
+    style="margin-top: 20px;"
+  >
+      <mat-grid-tile [colspan]="walnutWoodsImage">
+        <img
+          src="http://res.cloudinary.com/meta-lark-design/image/upload/c_scale,f_auto,q_auto:good,w_1352/v1535843059/Wedding/Walnut-Woods.jpg"
+          alt=""
+          width="100%"
+        />
+      </mat-grid-tile>
+    <mat-grid-tile colspan="1">
+      <div style="margin: 10%; box-sizing: border-box;">
+        <div class="venue-address">
+          3155 Walnut Woods Dr, West Des Moines, IA
+        </div>
+        <a href="https://www.google.com/maps?client=safari&rls=en&q=Walnut+Woods+State+Park&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=0ahUKEwish87h7pLdAhWC5oMKHUFIAJsQ_AUICigB" mat-raised-button color="primary" class="venue-direction-button">
+          Directions
+        </a>
+        <hr />
+        <br>
+        <div class="venue-events">
+          <li><strong>4pm-5pm</strong> Ceremony</li>
+          <li><strong>5pm-6pm</strong> Coffee and Cocktails</li>
+          <li><strong>6pm</strong> Dinner</li>
+          <li>Dancing to follow.</li>
+          <br>
+          <li>Festivities are to end promptly at
+          <strong>9:30pm</strong> to accommodate the venue.</li>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+    </div>
+</div>
+
+<div class="divider2">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="none"
+  >
+    <polygon
+      class="svg--sm"
+      fill="white"
+      points="0,50 25,0 75,100 100,50 100,100 0,100"
+    />
+  </svg>
+</div>
