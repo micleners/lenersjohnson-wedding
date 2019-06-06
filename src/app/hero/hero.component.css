@@ -1,0 +1,91 @@
+.hero-image {
+  background-position: top center;
+  position: relative;
+  /* prettier-ignore */
+  background-image: url(http://res.cloudinary.com/meta-lark-design/image/upload/c_scale,f_auto,q_auto:good,w_1866/c_crop,g_south,h_1348,w_3024,x_0,y_900/v1535843242/Wedding/IMG_0081.jpg);
+  padding-top: 50%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  background-size: cover;
+  text-align: right;
+  width: 100%;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0.82);
+  padding-top: 50%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-names {
+    font-size: 40px !important;
+  }
+  #hero-subtitle {
+    top: 325px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-image, .hero-overlay {
+    background-size: 1000px;
+    background-position: 10% 0%;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #hero-names {
+    font-size: 60px;
+  }
+  #hero-subtitle {
+    position: absolute;
+    top: 300px;
+  }
+}
+
+.hero-names {
+  margin: 0;
+  position: absolute;
+  top: 200px;
+  right: 5%;
+  z-index: 10;
+  font-family: Raleway, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 125px;
+  letter-spacing: 5px;
+  line-height: 1.3em;
+  color: #444235;
+  text-align: right;
+}
+
+.hero-subtitle {
+  position: absolute;
+  top: 350px;
+  right: 5%;
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: Raleway, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 50px;
+  line-height: 1.3em;
+  color: #2b5549;
+  text-align: right;
+}
