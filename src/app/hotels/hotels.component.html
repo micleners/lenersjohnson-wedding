@@ -1,12 +1,18 @@
 <div [ngClass]="{ container: !isMobile }">
   <h2 class="section-header">Need a hotel?</h2>
-  <mat-grid-list
-    [cols]="breakpoint"
-    rowHeight="400px"
-    (window:resize)="onResize()"
+  <div
+    fxLayout="row"
+    fxLayoutAlign="space-evenly center"
+    fxLayout.lt-md="column"
+    fxLayoutAlign.lt-md="center"
+    class="outter"
   >
-    <mat-grid-tile *ngFor="let hotel of hotels">
-      <app-hotel-card [hotel]="hotel"></app-hotel-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+    <app-hotel-card
+      fxFlex="1 1 100%"
+      *ngFor="let hotel of hotels"
+      [hotel]="hotel"
+      class="hotel-div"
+    >
+    </app-hotel-card>
+  </div>
 </div>
