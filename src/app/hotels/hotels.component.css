@@ -1,3 +1,15 @@
-app-hotel-card {
+/* app-hotel-card {
   width: 100%;
+} */
+
+.hotel-div {
+  display: inline-flex;
+}
+
+mat-grid-list {
+  margin: auto;
+}
+
+.mat-grid-list div {
+  margin: auto;
 }

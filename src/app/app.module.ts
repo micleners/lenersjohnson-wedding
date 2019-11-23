@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
 // import { DirectivesModule } from './directives/directives.module';
 // import { Material2Module } from './material2.module';
 
@@ -45,6 +46,7 @@ import { HeroComponent } from './hero/hero.component';
     MatButtonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     // Material2Module,
     // DirectivesModule,
     FormsModule,

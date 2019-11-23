@@ -6,36 +6,26 @@
   </a>
   <p class="hotel-description">({{ hotel.description }})</p>
   <div [ngClass]="{ 'hotel-container': isTablet || isMobile }">
-    <mat-grid-list cols="5" rowHeight="80px" class="a4">
+    <div fxLayout="row" fxLayoutAlign.lt-md="center" fxLayoutAlign="left">
       <a href="{{ hotel.gpsUrl }}">
-        <mat-grid-tile colspan="1">
-          <i class="material-icons hotel-icon">
-            location_on
-          </i>
-        </mat-grid-tile>
-      </a>
-      <mat-grid-tile colspan="4">
-        <a href="{{ hotel.gpsUrl }}" class="hotel-address">
-          {{ hotel.address1 }} <br />
-          {{ hotel.address2 }}
-        </a>
-      </mat-grid-tile>
-    </mat-grid-list>
-  </div>
-  <div [ngClass]="{ 'hotel-container': isTablet || isMobile }">
-    <mat-grid-list cols="5" rowHeight="80px" class="a4">
-      <mat-grid-tile colspan="1">
         <i class="material-icons hotel-icon">
-          smartphone
+          location_on
         </i>
-      </mat-grid-tile>
-      <mat-grid-tile colspan="4">
-        <p class="hotel-address" style="padding-top: 35px">
-          <span>
-            {{ hotel.phone }}
-          </span>
-        </p>
-      </mat-grid-tile>
-    </mat-grid-list>
+      </a>
+      <a href="{{ hotel.gpsUrl }}" class="hotel-address">
+        {{ hotel.address1 }} <br />
+        {{ hotel.address2 }}
+      </a>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign.lt-md="center" fxLayoutAlign="left">
+    <i class="material-icons hotel-icon">
+      smartphone
+    </i>
+    <p class="hotel-address hotel-address-height">
+      <span>
+        {{ hotel.phone }}
+      </span>
+    </p>
   </div>
 </mat-card>

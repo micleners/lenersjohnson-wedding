@@ -37,7 +37,5 @@ export class RegistriesComponent implements OnInit {
     this.isTablet = this.responsiveService.isTablet;
     this.isDesktop = this.responsiveService.isDesktop;
     this.breakpoint = this.isMobile ? 1 : 2;
-    console.log(this.isMobile)
-    console.log(this.breakpoint)
   }
 }
